@@ -2,12 +2,14 @@ package main
 
 import "fmt"
 
-func main() {
-    var str string = "testing 123"
-    var a, b int = 4, 5
-    fmt.Println("Hello!!!", str, "Numbers are:", a, "and", b)
+func test(x int, y int) (t int) {
+    t = x + y
+    return
+}
 
-    var c string
-    fmt.Scanln(&c)
-    fmt.Println(c)
+func main() {
+    var a, b int
+    fmt.Scanln(&a)
+    fmt.Scanln(&b)
+    fmt.Println(test(a, b))
 }
