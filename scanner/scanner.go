@@ -2,7 +2,7 @@ package scan
 
 import (
 	"bufio"
-	"fmt"
+	"strings"
 )
 
 func ScanLine (scanner *bufio.Scanner, line *string) {
@@ -10,8 +10,10 @@ func ScanLine (scanner *bufio.Scanner, line *string) {
     *line = scanner.Text()
 }
 
-func GetArgs (line *string) {
-    for i := 0; i < len(*line); i++ {
-        fmt.Println((*line)[i])
-    }
+// split this into a list
+func GetArgs (line *string) (strptr *[]string) {
+    // Splits the string delimited by space (does not matter how many)
+    var strList []string = strings.Fields(*line)
+    strptr = &strList
+    return
 }
