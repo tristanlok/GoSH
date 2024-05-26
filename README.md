@@ -1,4 +1,4 @@
-# GoSH
+# Oh My GoSH!
 
 ![go](https://github.com/tristanlok/GoSH/assets/157249099/c30236f8-a7f6-4e55-8849-4968f09ee8c9)
 
